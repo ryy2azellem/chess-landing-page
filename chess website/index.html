@@ -1,0 +1,115 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('dark-wood.jpg');
+      background-size: cover;
+      color: #f4e1b6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 15px;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px #d4af37;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+      width: 80%;
+      font-size: 1em;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #d4af37;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #bfa137;
+      transform: scale(1.05);
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(212,175,55,0.6);
+    }
+
+    /* Floating buttons */
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .floating-btn a {
+      padding: 15px;
+      background-color: #d4af37;
+      color: black;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(212,175,55,0.6);
+      transition: 0.3s;
+    }
+
+    .floating-btn a:hover {
+      background-color: #bfa137;
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(212,175,55,0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Master Chess Faster</h1>
+    <img src="chessboard.jpg" alt="Chess Board">
+    <p>Sign up to get your <strong>Chessclub Manual</strong> and <strong>Advance to Mastery Chess Puzzle</strong> guides.</p>
+
+    <!-- Formspree Form -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <input type="hidden" name="_redirect" value="thankyou.html">
+      <button type="submit">Get My Free Guides</button>
+    </form>
+  </div>
+
+  <!-- Floating WhatsApp & Email -->
+  <div class="floating-btn">
+    <a href="https://wa.me/639634483871" target="_blank">WhatsApp</a>
+    <a href="mailto:youremail@example.com">Email</a>
+  </div>
+</body>
+</html>
